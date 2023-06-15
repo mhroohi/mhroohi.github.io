@@ -25,10 +25,10 @@ import sendHover from './icons/sendHover.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
-import figma from './tech/figma.png';
+import python from './tech/python.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
-import javascript from './tech/javascript.png';
+import k8s from './tech/k8s.png';
 import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
@@ -74,9 +74,9 @@ export {
   sendHover,
   css,
   docker,
-  figma,
+  python,
   git,
-  graphql,
+  k8s,
   html,
   javascript,
   nodejs,
