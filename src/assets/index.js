@@ -4,18 +4,20 @@ import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
 
 import logo from './logo/hossein-logo.png';
-import logotext from './logo/hossein-logo-text.png';
+// import logotext from './logo/hossein-logo-text.png';
 
 import shaq from './personal/hossein.png';
 
 import backend from './icons/backend.png';
-import ux from './icons/ux.png';
-import frontend from './icons/frontend.png';
+import DS from './icons/DS.png';
+import MLOps from './icons/MLOps.png';
 import prototyping from './icons/prototyping.png';
 import github from './icons/github.png';
 import close from './icons/close.png';
 import download from './icons/download.png';
 import downloadHover from './icons/downloadHover.png';
+import GoogleScholar from './icons/GoogleScholar.png';
+import GoogleScholarHover from './icons/GoogleScholarHover.png';
 import pineapple from './icons/pineapple.png';
 import pineappleHover from './icons/pineappleHover.png';
 import menu from './icons/menu.png';
@@ -28,13 +30,13 @@ import docker from './tech/docker.png';
 import python from './tech/python.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
-import k8s from './tech/k8s.png';
+import kuber from './tech/kuber.png';
 import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
+import javascript from './tech/javascript.png';
 import typescript from './tech/typescript.png';
-import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 
@@ -43,12 +45,12 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
+import alarm from './projects/alarm.png';
+import bms from './projects/bms.png';
+import cyber from './projects/cyber.png';
+import labview from './projects/labview.png';
+import slm from './projects/slm.png';
+import wsn from './projects/wsn.png';
 
 export {
   bwmap,
@@ -56,16 +58,17 @@ export {
   whiteabstract,
   worldmap,
   logo,
-  logotext,
   shaq,
   backend,
-  ux,
-  frontend,
+  DS,
+  MLOps,
   prototyping,
   github,
   close,
   download,
   downloadHover,
+  GoogleScholar,
+  GoogleScholarHover,
   pineapple,
   pineappleHover,
   menu,
@@ -76,7 +79,7 @@ export {
   docker,
   python,
   git,
-  k8s,
+  kuber,
   html,
   javascript,
   nodejs,
@@ -86,12 +89,12 @@ export {
   redux,
   tailwind,
   typescript,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  alarm,
+  bms,
+  cyber,
+  labview,
+  slm,
+  wsn,
   coverhunt,
   dcc,
   kelhel,

@@ -1,28 +1,20 @@
 import {
-  frontend,
-  backend,
-  ux,
+  DS,
+  MLOps,
   prototyping,
-  javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
   git,
-  figma,
   docker,
-  postgresql,
-  rubyrails,
-  graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
+  python,
+  kuber,
+  postgresql,  
+  alarm,
+  bms,
+  cyber,
+  labview,
+  slm,
+  wsn,
   coverhunt,
   dcc,
   kelhel,
@@ -39,70 +31,34 @@ export const navLinks = [
     title: 'Projects',
   },
   {
+    id: 'papers',
+    title: 'Publications',
+  },
+  {
     id: 'contact',
     title: 'Contact',
   },
 ];
 
-const services = [
-  {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'UI/UX Design',
-    icon: ux,
-  },
-  {
-    title: 'Software Prototyping',
-    icon: prototyping,
-  },
-];
+// const services = [
+//   {
+//     title: 'Data Science',
+//     icon: DS,
+//   },
+//   {
+//     title: 'MLOps',
+//     icon: MLOps,
+//   },
+//   {
+//     title: 'Software Prototyping',
+//     icon: prototyping,
+//   },
+// ];
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
+    name: 'python',
+    icon: python,
   },
   {
     name: 'postgresql',
@@ -113,51 +69,115 @@ const technologies = [
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
-  },
-  {
     name: 'docker',
     icon: docker,
+  },
+  {
+    name: 'kuber',
+    icon: kuber,
   },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'Data Scientist',
+    company_name: 'MicroFocus',
+    // icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Since Sep 2021',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'Postdoctoral Fellow',
+    company_name: 'University of Alberta',
+    // icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Jan 2021 - Sep 2021',
   },
+  // {
+  //   title: 'Software Developer',
+  //   company_name: 'Faculty of Rehabilitation Medicine, University of Alberta',
+  //   icon: microverse,
+  //   iconBg: '#333333',
+  //   date: 'March 2017 - Sep 2017',
+  // },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Embedded System Developer',
+    company_name: 'SarvNet Telecommunication Inc',
+    // icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Jan 2011 - Sep 2015',
   },
 ];
 
-const projects = [
+
+const projects_sw = [
+  { 
+    id: 'project-cyber',
+    shortName: 'Anomaly Detection',
+    name: 'Anomaly Detection for Cyber Security',
+    description: 'As a data scientist, I have designed and optimized behavioral analytics and anomaly detection modules ' +
+    'using machine learning. Our solution leverages advanced algorithms to identify and mitigate potential threats in real-time, ' +
+    'ensuring the security of digital assets.',
+    image: cyber,
+  },
+  {
+    id: 'project-alarm',
+    shortName: 'Industrial Alarm',
+    name: 'Industrial Alarm Management Systems',
+    description: 'I have had the privilege of contributing to the development of an Alarm Management System for the oil and gas industries. ' +
+    'During my involvement, I worked on various algorithms aimed at improving alarm systems, including filters, root cause analysis, ' +
+    'interplay of control and alarm systems, and alarm flood classification. These efforts were driven by a desire to enhance operational ' +
+    'safety and efficiency in critical industrial environments.',
+    image: alarm,
+  },
+  {
+    id: 'project-labview',
+    shortName: 'Data Aquizition',
+    name: 'Data Acquisition using LabVIEW',
+    description: 'I have developed software using LabVIEW for data acquisition in rehabilitation research. ' +
+    'DThis software enables researchers to efficiently collect and analyze data, aiding in the advancement of rehabilitation methodologies.',
+    image: labview,
+  },
+];
+
+
+const projects_hw = [
+  { 
+    id: 'project-wsn',
+    shortName: 'WSN for a Power Plant',
+    name: 'Wireless Senso Network for a Power Plant',
+    description: 'We developed a wireless sensor network and data aquizition solution specifically designed for power plants. '+
+    'It enables precise and continuous measurement of diverse parameters crucial for plant operations. '+
+    'By seamlessly transmitting data to a centralized monitoring system, it empowers plant operators to gain real-time insights, '+ 
+    'enhance decision-making, and optimize overall performance, ensuring the reliable and efficient operation of power generation facilities.',
+    image: wsn,
+  },
+  {
+    id: 'project-bms',
+    shortName: 'Inteligent Lighting System',
+    name: 'Inteligent Building Lighting Managment System',
+    description: "Our team has collaborated on a project to develop a lighting management network that integrates a mobile app, "+
+    "software, and connected devices. By harnessing the power of motion detection, our system provides intelligent lighting solutions " + 
+    "that automatically respond to users' presence, resulting in enhanced energy efficiency and personalized lighting experiences.",
+    image: bms,
+  },
+  {
+    shortName: 'Metal 3D Printer',
+    name: 'Selective Laser Melting Printer',
+    description: 'I have been involved in the development of a Selective Laser Melting (SLM) Printer, ' +
+    'focusing on both hardware and control system advancements. By leveraging cutting-edge technology, ' +
+    'our printer enables precise and efficient metal 3D printing. With meticulous attention to detail, we ' +
+    'have contributed to enhancing the hardware components and control system, ensuring exceptional print quality and reliability.',
+    image: slm,
+  },
+];
+
+const papers = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    shortName: '--',
+    name: '--',
+    description: 'This research paper studies oscillations in populations of decision makers who are either coordinators or anticoordinators. The results show that the population can admit complex oscillations in the absence of noise and population structure, shedding light on reported oscillations in nature and human societies.',
     tags: [
       {
         name: 'react',
@@ -172,100 +192,32 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: wsn,
+    repo: 'https://arxiv.org/pdf/2202.00223.pdf',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
-    description:
-      'A leaderboard list app that displays scores submitted by different players.',
+    shortName: 'Characterizing oscillations',
+    name: 'Characterizing oscillations in heterogeneous populations of coordinators and anticoordinators',
+    description: 'This research paper studies oscillations in populations of decision makers who are either coordinators or anticoordinators. The results show that the population can admit complex oscillations in the absence of noise and population structure, shedding light on reported oscillations in nature and human societies.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'mongodb',
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'tailwind',
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
-  },
-  {
-    id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
-  },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: wsn,
+    repo: 'https://arxiv.org/pdf/2202.00223.pdf',
   },
 ];
 
-export { services, technologies, experiences, projects };
+// export { services, technologies, experiences, projects , papers };
+export { technologies, experiences, projects_sw, projects_hw , papers };

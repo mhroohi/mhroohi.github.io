@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { github, pineapple, pineappleHover } from '../assets';
-import { projects_sw, projects_hw } from '../constants';
 import { papers } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
+import { GoogleScholar, GoogleScholarHover, resume } from '../assets';
 
 
-const ProjectCard = ({
+const PaperCard = ({
   id,
   shortName,
   name,
@@ -54,7 +54,7 @@ const ProjectCard = ({
             className="absolute bottom-0 p-8 justify-start w-full 
             flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
             <div className="absolute inset-0 flex justify-end m-3">
-              {/* <div
+              <div
                 onClick={() => window.open(repo, '_blank')}
                 className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
                   flex justify-center items-center cursor-pointer
@@ -64,7 +64,7 @@ const ProjectCard = ({
                   alt="source code"
                   className="w-4/5 h-4/5 object-contain"
                 />
-              </div> */}
+              </div>
             </div>
 
             <h2
@@ -78,7 +78,7 @@ const ProjectCard = ({
               font-poppins tracking-[1px]">
               {description}
             </p>
-            {/* <button
+            <button
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-2 pr-3 
@@ -105,7 +105,7 @@ const ProjectCard = ({
                   w-[30px] h-[30px] object-contain"
               />
               LIVE DEMO
-            </button> */}
+            </button>
           </div>
         </>
       )}
@@ -113,65 +113,63 @@ const ProjectCard = ({
   );
 };
 
-const Projects = () => {
-  const [active, setActive] = useState('cyber');
+const Papers = () => {
+  const [active, setActive] = useState('paper-2');
 
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>What I've done ...</p>
-        <h2 className={`${styles.sectionHeadTextLight}`}>Projects</h2>
+        <p className={`${styles.sectionSubText} `}>My Research Interests and more ...</p>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Publications</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          I have had the privilege of working on a diverse range of projects, including software development, 
-          embedded systems, and hardware design. These experiences have provided valuable opportunities for growth and learning. 
-          By collaborating with talented teams and leveraging my skills, I have been able to contribute to the successful 
-          completion of these projects.
+          In my research, I delve into various areas of study, including anomaly detection, alarm management systems, 
+          causality analysis and filter design in alarm systems, networked control systems, and evolutionary game theory. 
+          These research interests represent my dedication to understanding and improving critical aspects of control systems, 
+          alarm systems, and decision-making dynamics. For more detailed information about my research and publications, 
+          please refer to my Google Scholar profile, where you can find a collection of my academic papers and contributions.
+          <button
+              className="live-demo flex justify-between 
+              sm:text-[18px] text-[14px] text-timberWolf 
+              font-bold font-beckman items-center py-5 pl-3 pr-3 
+              whitespace-nowrap gap-1 sm:w-[220px] sm:h-[58px] 
+              w-[190px] h-[46px] rounded-[10px] bg-jetLight 
+              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
+              hover:text-eerieBlack transition duration-[0.2s] 
+              ease-in-out"
+              onClick={() =>
+                window.open(
+                  'https://scholar.google.com/citations?user=-OMiZvUAAAAJ&hl=en', //paste the link to your resume here
+                  '_blank'
+                )
+              }
+              onMouseOver={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', GoogleScholarHover);
+              }}
+              onMouseOut={() => {
+                document
+                  .querySelector('.download-btn')
+                  .setAttribute('src', GoogleScholar);
+              }}>
+              Google Scholar
+              <img
+                src={GoogleScholar}
+                alt="GoogleScholar"
+                className="download-btn sm:w-[26px] sm:h-[26px] 
+                w-[23px] h-[23px] object-contain"
+              />
+            </button>
         </motion.p>
       </div>
-      
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[10px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {projects_sw.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              index={index}
-              {...project}
-              active={active}
-              handleClick={setActive}
-            />
-          ))}
-        </div>
-      </motion.div>
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[0px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {projects_hw.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              index={index}
-              {...project}
-              active={active}
-              handleClick={setActive}
-            />
-          ))}
-        </div>
-      </motion.div>
+
     </div>
   );
 };
 
-export default SectionWrapper(Projects, 'projects');
+export default SectionWrapper(Papers, 'papers');

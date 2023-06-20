@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { services } from '../constants';
+// import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
@@ -30,25 +30,25 @@ const About = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Who amd I?</p>
+        <p className={styles.sectionSubText}>Who am I?</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        I'm Mohammad Hossein Roohi, a Data Scientist specializing in anomaly detection and behavior analysis. 
+        I'm Hossein Roohi, a Data Scientist specializing in anomaly detection and behavior analysis. 
         With a Ph.D. in Electrical Engineering from the University of Alberta, 
         my research focused on industrial alarm management systems and causality analysis. Currently, 
         I work as a Data Scientist, focusing on anomaly detection and behavior analysis. 
         Through statistical modeling and machine learning, I uncover insights and provide actionable intelligence.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
