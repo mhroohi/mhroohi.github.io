@@ -65,6 +65,7 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
+              {/* uncomment  this part to add nav bar for mobile size*/}
               {/* <ul
                 className="list-none flex flex-col -gap-[1rem] 
                 items-start justify-end mt-[10rem] -ml-[35px]">
