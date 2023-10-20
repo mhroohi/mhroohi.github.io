@@ -65,7 +65,7 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-              <ul
+              {/* <ul
                 className="list-none flex flex-col -gap-[1rem] 
                 items-start justify-end mt-[10rem] -ml-[35px]">
                 {navLinks.map((nav) => (
@@ -74,8 +74,8 @@ const Navbar = () => {
                     key={nav.id}
                     className={`${
                       active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    } hover:text-taupe text-[11px] font-medium font-mova 
+                    uppercase tracking-[3px] cursor-pointer nav-links`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
@@ -83,14 +83,14 @@ const Navbar = () => {
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           ) : (
             <img
-              src={menu}
-              alt="menu"
-              className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
+              // src={menu}
+              // alt="menu"
+              // className="w-[34px] h-[34px] object-contain cursor-pointer"
+              // onClick={() => setToggle(!toggle)}
             />
           )}
         </div>
