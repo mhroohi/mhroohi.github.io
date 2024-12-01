@@ -18,8 +18,6 @@ This project uses **Vite** as the build tool. Here's how to get started:
 First, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
-cd your-repository
 npm install
 ```
 
