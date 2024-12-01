@@ -66,16 +66,16 @@ const technologies = [
     name: 'C++',
     icon: cpp,
   },
+  // {
+  //   name: 'Scikit Learn',
+  //   icon: sklearn,
+  // },
+  // {
+  //   name: 'Pytorch',
+  //   icon: pytorch,
+  // },
   {
-    name: 'Scikit Learn',
-    icon: sklearn,
-  },
-  {
-    name: 'Pytorch',
-    icon: pytorch,
-  },
-  {
-    name: 'Postgresql',
+    name: 'PostgreSQL',
     icon: postgresql,
   },
   {
@@ -166,7 +166,7 @@ const projects_sw = [
 const projects_hw = [
   { 
     id: 'project-wsn',
-    shortName: 'Wireless Sensor Network',
+    shortName: 'Sensor Network',
     name: 'Wireless Sensor Network for a Power Plant',
     description: 'We developed a wireless sensor network and data aquizition solution specifically designed for power plants. '+
     'It enables precise and continuous measurement of diverse parameters crucial for plant operations. '+
