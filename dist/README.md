@@ -4,7 +4,6 @@ Welcome to my personal website! This is the source code repository for the portf
 
 ## Project Overview
 
-- **Project Name**: Hossein
 - **Version**: 1.0.0
 - **Homepage**: [http://mhroohi.github.io](http://mhroohi.github.io)
 - **Private**: This project is private and not publicly available.
