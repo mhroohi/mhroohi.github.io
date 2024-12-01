@@ -32,6 +32,11 @@ import kuber from './tech/kuber.png';
 import postgresql from './tech/postgresql.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
+import elastic from './tech/elastic.png';
+import aws from './tech/aws.png';
+import cpp from './tech/cpp.png';
+import sklearn from './tech/scikitlearn.png';
+import pytorch from './tech/pytorch.png';
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
@@ -85,4 +90,9 @@ export {
   dcc,
   kelhel,
   microverse,
+  elastic,
+  aws,
+  cpp,
+  pytorch,
+  sklearn,
 };

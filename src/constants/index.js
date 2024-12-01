@@ -15,9 +15,11 @@ import {
   labview,
   slm,
   wsn,
-  coverhunt,
-  dcc,
-  kelhel,
+  elastic,
+  aws,
+  cpp,
+  pytorch,
+  sklearn,
   microverse,
 } from '../assets';
 
@@ -57,30 +59,50 @@ export const navLinks = [
 
 const technologies = [
   {
-    name: 'python',
+    name: 'Python',
     icon: python,
   },
   {
-    name: 'postgresql',
+    name: 'C++',
+    icon: cpp,
+  },
+  {
+    name: 'Scikit Learn',
+    icon: sklearn,
+  },
+  {
+    name: 'Pytorch',
+    icon: pytorch,
+  },
+  {
+    name: 'Postgresql',
     icon: postgresql,
   },
   {
-    name: 'git',
+    name: 'Elastic Search',
+    icon: elastic,
+  },
+  {
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'docker',
+    name: 'Docker',
     icon: docker,
   },
   {
-    name: 'kuber',
+    name: 'Kubernetes',
     icon: kuber,
+  },
+  {
+    name: 'AWS',
+    icon: aws,
   },
 ];
 
 const experiences = [
   {
-    title: 'Data Scientist',
+    title: 'Sr. Data Scientist',
     company_name: 'MicroFocus',
     // icon: coverhunt,
     iconBg: '#333333',
