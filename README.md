@@ -1,11 +1,11 @@
 # My Portfolio
 
-Welcome to my personal website! This is the source code repository for the portfolio site hosted at [http://mhroohi.github.io](http://mhroohi.github.io).
+Welcome to my personal website! This is the source code repository for the portfolio site hosted at [mhroohi.com](mhroohi.com).
 
 ## Project Overview
 
 - **Version**: 1.0.0
-- **Homepage**: [http://mhroohi.github.io](http://mhroohi.github.io)
+- **Homepage**: [mhroohi.com](mhroohi.com)
 - **Private**: This project is private and not publicly available.
 - **Type**: Module (ES Module)
 

@@ -166,8 +166,8 @@ const projects_sw = [
 const projects_hw = [
   { 
     id: 'project-wsn',
-    shortName: 'WSN for a Power Plant',
-    name: 'Wireless Senso Network for a Power Plant',
+    shortName: 'Wireless Sensor Network',
+    name: 'Wireless Sensor Network for a Power Plant',
     description: 'We developed a wireless sensor network and data aquizition solution specifically designed for power plants. '+
     'It enables precise and continuous measurement of diverse parameters crucial for plant operations. '+
     'By seamlessly transmitting data to a centralized monitoring system, it empowers plant operators to gain real-time insights, '+ 
@@ -176,7 +176,7 @@ const projects_hw = [
   },
   {
     id: 'project-bms',
-    shortName: 'Inteligent Lighting System',
+    shortName: 'Inteligent Lighting',
     name: 'Inteligent Building Lighting Managment System',
     description: "Our team has collaborated on a project to develop a lighting management network that integrates a mobile app, "+
     "software, and connected devices. By harnessing the power of motion detection, our system provides intelligent lighting solutions " + 
