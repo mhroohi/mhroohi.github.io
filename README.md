@@ -32,7 +32,7 @@ npm install
   ```bash
   npm run build
   ```
-  This will bundle the app and create a production-ready version in the `build` folder.
+  This will bundle the app and create a production-ready version in the `dist` folder.
 
 - **lint**: Lint the project files using ESLint.
   ```bash
@@ -48,19 +48,20 @@ npm install
 
 ### Deployment
 
-To deploy the project to GitHub Pages, follow these steps:
+**Build and deploy to GitHub Pages:**
+```bash
+npm run deploy
+```
+This builds the project and pushes the `dist` folder to the `gh-pages` branch.
 
-1. **Build the project**:
-   ```bash
-   npm run build
-   ```
+**First-time setup** — if you see "There isn't a GitHub Pages site here" (404):
 
-2. **Deploy to GitHub Pages**:
-   ```bash
-   npm run deploy
-   ```
+1. Go to **Settings** → **Pages** in the repo
+2. Under **Source**, select **Deploy from a branch**
+3. Choose branch **gh-pages** and folder **/ (root)**
+4. Save
 
-This will automatically push the built files to the `gh-pages` branch of the repository, making the site live on GitHub Pages.
+Then run `npm run deploy` again and wait 1–2 minutes for the site to go live.
 
 ## Special Thanks
 
